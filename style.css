@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 50px;
+}
+
+.nav-links协议 a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #444;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header */
+.main-header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* Layout Rows */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-side h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-side img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    filter: grayscale(20%); /* Optional: gives a sleek tech look */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .row, .row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+}
