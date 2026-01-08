@@ -93,3 +93,38 @@ body {
         text-align: center;
     }
 }
+
+/* Position the header in the top-left */
+.main-header {
+    text-align: left; /* Align text to the left */
+    padding: 20px 50px; /* Match the navbar's horizontal padding */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stack the lines vertically */
+    line-height: 1.1;
+}
+
+/* "COFFEE BEAN" - smaller */
+.logo-top {
+    font-size: 1.8rem; 
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #cccccc; /* Slightly dimmed for hierarchy */
+}
+
+/* "ROBOTICS AND AUTOMATION" - larger */
+.logo-bottom {
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Adjust the Navbar to prevent overlap */
+.navbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
